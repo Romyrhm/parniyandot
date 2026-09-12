@@ -1,0 +1,3380 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>پرنیان دات</title>
+
+    <meta
+        name="description"
+        content="پرنیان دات؛ خدمات چاپ نقطه‌ای PVC ضدلغزش بر پشت نمدهای ژئوتکستایل و انواع پارچه، همراه با معرفی فرشینه و ترمزگیر فرش."
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/collection.css') }}"
+    >
+
+
+    <style>
+        /* PARNIAN DOT — PRELOADER LOGO */
+        .preloader-logo-card {
+            width: min(430px, 78vw);
+            margin: 0 auto 42px;
+            padding: 18px 24px;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(185, 154, 103, 0.34);
+            box-shadow:
+                0 24px 70px rgba(0, 0, 0, 0.28),
+                0 0 55px rgba(185, 154, 103, 0.08);
+            overflow: hidden;
+        }
+
+        .preloader-logo {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        /* PAGE 02 — PVC DOT PRINTING INTRO */
+        .dark-section.dark-service-section {
+            position: relative;
+            justify-content: center;
+        }
+
+        .dark-service-section::before {
+            content: "";
+            position: absolute;
+            width: 520px;
+            height: 520px;
+            left: 8%;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(58, 119, 120, 0.20),
+                    rgba(185, 154, 103, 0.07) 42%,
+                    transparent 72%
+                );
+            filter: blur(10px);
+            pointer-events: none;
+        }
+
+        .dark-service-inner {
+            position: relative;
+            z-index: 2;
+            max-width: 1180px;
+        }
+
+        .dark-service-section h2 {
+            max-width: 1050px;
+            font-size: clamp(54px, 8.3vw, 132px);
+            line-height: 1.05;
+        }
+
+        .dark-service-description {
+            max-width: 760px;
+            margin-top: 52px;
+            padding-top: 28px;
+            border-top: 1px solid rgba(215, 186, 131, 0.22);
+            font-size: clamp(15px, 1.5vw, 20px);
+            line-height: 2.25;
+            color: rgba(248, 244, 237, 0.66);
+        }
+
+        .dark-service-description strong {
+            color: #d7ba83;
+            font-weight: 500;
+        }
+
+        @media (max-width: 560px) {
+            .preloader-logo-card {
+                margin-bottom: 30px;
+                padding: 12px 15px;
+                border-radius: 17px;
+            }
+
+            .dark-service-description {
+                margin-top: 35px;
+                padding-top: 22px;
+                font-size: 14px;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         PRELOADER
+    ========================================= -->
+
+    <div class="preloader">
+
+        <div class="preloader-inner">
+
+            <div class="preloader-logo-card">
+
+                <img
+                    src="{{ url_for('static', filename='images/parnian-dot-logo.png') }}"
+                    alt="لوگوی پرنیان دات"
+                    class="preloader-logo"
+                >
+
+            </div>
+
+            <div class="preloader-top">
+
+                <span class="preloader-brand">
+                    PARNIAN DOT
+                </span>
+
+                <span class="preloader-percent">
+                    0
+                </span>
+
+            </div>
+
+
+            <div class="preloader-line">
+
+                <div class="preloader-line-fill"></div>
+
+            </div>
+
+
+            <div class="preloader-bottom">
+
+                <span>
+                    پرنیان دات
+                </span>
+
+                <span>
+                    EST. 2026
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================================
+         NAVBAR
+    ========================================= -->
+
+    <header class="navbar">
+
+        <a
+            href="#hero"
+            class="nav-logo"
+        >
+
+            <span class="nav-logo-fa">
+                پرنیان دات
+            </span>
+
+            <span class="nav-logo-en">
+                PARNIAN DOT
+            </span>
+
+        </a>
+
+
+        <nav class="nav-menu">
+
+            <a href="#hero">
+                خانه
+            </a>
+
+            <a href="#farshineh">
+                فرشینه
+            </a>
+
+            <a href="#grip">
+                ترمزگیر فرش
+            </a>
+
+            <a href="#real-rugs">
+                محصولات
+            </a>
+
+            <a href="#rug-finder">
+                فرش من
+            </a>
+
+            <a href="#about">
+                درباره ما
+            </a>
+
+        </nav>
+
+
+        <a
+            href="#contact"
+            class="nav-contact"
+        >
+            ارتباط با ما
+        </a>
+
+
+        <button
+            class="mobile-menu-button"
+            aria-label="باز کردن منو"
+        >
+
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </header>
+
+
+    <!-- ========================================
+         MOBILE MENU
+    ========================================= -->
+
+    <div class="mobile-menu">
+
+        <nav>
+
+            <a href="#hero">
+                خانه
+            </a>
+
+            <a href="#farshineh">
+                فرشینه
+            </a>
+
+            <a href="#grip">
+                ترمزگیر فرش
+            </a>
+
+            <a href="#real-rugs">
+                محصولات
+            </a>
+
+            <a href="#rug-finder">
+                فرش من
+            </a>
+
+            <a href="#about">
+                درباره ما
+            </a>
+
+            <a href="#contact">
+                ارتباط با ما
+            </a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- ========================================
+         HERO
+    ========================================= -->
+
+    <section
+        class="hero"
+        id="hero"
+    >
+
+        <div class="carpet-stage">
+
+            <div class="carpet-glow"></div>
+
+            <div class="carpet-shadow"></div>
+
+
+            <div class="magic-dust dust-1"></div>
+            <div class="magic-dust dust-2"></div>
+            <div class="magic-dust dust-3"></div>
+            <div class="magic-dust dust-4"></div>
+            <div class="magic-dust dust-5"></div>
+            <div class="magic-dust dust-6"></div>
+
+
+            <div class="carpet-wrapper">
+
+                <img
+                    src="{{ url_for('static', filename='images/magic-carpet.jpg') }}"
+                    alt="فرش پرنیان"
+                    class="flying-carpet"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-content">
+
+            <p class="kicker">
+                PARNIAN DOT
+            </p>
+
+
+            <h1>
+
+                <span class="title-line">
+                    پرنیان
+                </span>
+
+                <span class="outline title-line">
+                    دات
+                </span>
+
+            </h1>
+
+
+            <p class="hero-text">
+
+                خدمات چاپ نقطه‌ای PVC،
+                فرشینه و راهکارهای ضدلغزش
+                با رویکردی مدرن، کاربردی و دقیق.
+
+            </p>
+
+
+            <a
+                href="#farshineh"
+                class="hero-button"
+            >
+
+                مشاهده محصولات
+
+                <span>
+                    ↓
+                </span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         BRAND STATEMENT
+    ========================================= -->
+
+    <section class="dark-section dark-service-section">
+
+        <div class="dark-service-inner">
+
+            <p class="dark-label">
+                ANTI-SLIP PVC DOT PRINTING
+            </p>
+
+
+            <h2>
+
+                ثباتی که از
+
+                <span>
+                    جزئیات شروع می‌شود
+                </span>
+
+            </h2>
+
+
+            <p class="dark-service-description">
+
+                در <strong>پرنیان دات</strong>،
+                خدمات چاپ نقطه‌ای PVC بر پشت نمدهای ژئوتکستایل
+                و انواع پارچه انجام می‌شود؛
+                راهکاری دقیق و کاربردی برای افزایش اصطکاک،
+                کاهش لغزش و ایجاد ثبات بیشتر روی سطوح مختلف.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         FARSHINEH
+    ========================================= -->
+
+    <section
+        class="farshineh-section"
+        id="farshineh"
+    >
+
+        <div class="section-number">
+            01
+        </div>
+
+
+        <div class="farshineh-image-wrap">
+
+            <div class="farshineh-image-box">
+
+                <img
+                    src="{{ url_for('static', filename='images/farshineh.jpg') }}"
+                    alt="فرشینه پرنیان دات"
+                    class="farshineh-photo"
+                >
+
+
+                <div class="farshineh-photo-shade"></div>
+
+
+                <div class="image-overlay-text">
+                    PARNIAN
+                </div>
+
+
+                <div class="image-circle"></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="farshineh-content">
+
+            <p class="product-en">
+                FARSHINEH
+            </p>
+
+
+            <h2>
+                فرشینه
+            </h2>
+
+
+            <p class="farshineh-description">
+
+                ترکیبی از زیبایی، اصالت و هماهنگی
+                برای ایجاد فضایی گرم‌تر و چشم‌نوازتر
+                در خانه.
+
+            </p>
+
+
+            <div class="features">
+
+                <div class="feature-item">
+
+                    <span class="feature-number">
+                        01
+                    </span>
+
+                    <span>
+                        طراحی چشم‌نواز
+                    </span>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <span class="feature-number">
+                        02
+                    </span>
+
+                    <span>
+                        هماهنگ با فضای مدرن
+                    </span>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <span class="feature-number">
+                        03
+                    </span>
+
+                    <span>
+                        توجه به جزئیات
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         CARPET GRIP
+    ========================================= -->
+
+    <section
+        class="grip-section"
+        id="grip"
+    >
+
+        <div class="grip-number">
+            02
+        </div>
+
+
+        <div class="grip-content">
+
+            <p class="grip-en">
+                CARPET GRIP
+            </p>
+
+
+            <h2>
+                ترمزگیر فرش
+            </h2>
+
+
+            <p class="grip-description">
+
+                راهکاری ساده برای افزایش ثبات فرش،
+                کاهش حرکت و جلوگیری از لغزش
+                روی سطوح مختلف.
+
+            </p>
+
+
+            <div class="grip-features">
+
+                <div class="grip-feature">
+
+                    <span>
+                        01
+                    </span>
+
+                    <p>
+                        جلوگیری از لغزش
+                    </p>
+
+                </div>
+
+
+                <div class="grip-feature">
+
+                    <span>
+                        02
+                    </span>
+
+                    <p>
+                        استفاده آسان
+                    </p>
+
+                </div>
+
+
+                <div class="grip-feature">
+
+                    <span>
+                        03
+                    </span>
+
+                    <p>
+                        مناسب انواع فرش
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="grip-visual">
+
+            <img
+                src="{{ url_for('static', filename='images/carpet-grip.jpg') }}"
+                alt="ترمزگیر فرش"
+                class="grip-photo"
+            >
+
+
+            <div class="grip-photo-shade"></div>
+
+            <div class="grip-grid"></div>
+
+            <div class="grip-circle grip-circle-one"></div>
+
+            <div class="grip-circle grip-circle-two"></div>
+
+
+            <div class="grip-word">
+                STAY
+            </div>
+
+
+            <div class="grip-card">
+
+                <span>
+                    NO SLIP
+                </span>
+
+                <strong>
+                    ثابت بمان
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         GALLERY
+    ========================================= -->
+
+    <section
+        class="gallery-section"
+        id="gallery"
+    >
+
+        <div class="gallery-header">
+
+            <p>
+                PARNIAN DOT / COLLECTION
+            </p>
+
+
+            <h2>
+                انتخاب‌ها
+            </h2>
+
+        </div>
+
+
+        <div class="gallery-track">
+
+
+            <article class="gallery-card card-one">
+
+                <img
+                    src="{{ url_for('static', filename='images/farshineh.jpg') }}"
+                    alt="فرشینه"
+                    class="gallery-photo"
+                >
+
+
+                <div class="gallery-shade"></div>
+
+
+                <span class="gallery-number">
+                    01
+                </span>
+
+
+                <div class="gallery-card-content">
+
+                    <p>
+                        PARNIAN DOT COLLECTION
+                    </p>
+
+                    <h3>
+                        فرشینه
+                    </h3>
+
+                </div>
+
+            </article>
+                        <article class="gallery-card card-two">
+
+                <img
+                    src="{{ url_for('static', filename='images/farshineh-detail.jpg') }}"
+                    alt="جزئیات بافت فرشینه"
+                    class="gallery-photo"
+                >
+
+
+                <div class="gallery-shade"></div>
+
+
+                <span class="gallery-number">
+                    02
+                </span>
+
+
+                <div class="gallery-card-content">
+
+                    <p>
+                        TEXTURE / DETAIL
+                    </p>
+
+                    <h3>
+                        جزئیات بافت
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+            <article class="gallery-card card-three">
+
+                <img
+                    src="{{ url_for('static', filename='images/farshineh-lifestyle.jpg') }}"
+                    alt="فرشینه در فضای خانه"
+                    class="gallery-photo"
+                >
+
+
+                <div class="gallery-shade"></div>
+
+
+                <span class="gallery-number">
+                    03
+                </span>
+
+
+                <div class="gallery-card-content">
+
+                    <p>
+                        MODERN LIVING
+                    </p>
+
+                    <h3>
+                        در فضای خانه
+                    </h3>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         REAL RUG COLLECTION
+    ========================================= -->
+
+    <section
+        class="real-rugs-section"
+        id="real-rugs"
+    >
+
+        <div class="real-rugs-head">
+
+            <p class="real-rugs-kicker">
+                PARNIAN DOT / REAL COLLECTION
+            </p>
+
+
+            <div class="real-rugs-title-row">
+
+                <h2>
+
+                    فرش‌های
+
+                    <span>
+                        پرنیان دات
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    چهارده طرح واقعی از مجموعه پرنیان دات؛
+                    هر کدام با رنگ، شخصیت و حال‌وهوایی متفاوت
+                    برای انتخابی هماهنگ‌تر با فضای شما.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="real-rugs-list">
+
+
+            <!-- ========================================
+                 RUG 01
+            ========================================= -->
+
+            <article
+                class="real-rug-card"
+                data-curtain-direction="right"
+            >
+
+                <div class="real-rug-media">
+
+                    <img
+                        src="{{ url_for('static', filename='images/rug-01.jpg') }}"
+                        alt="طوسی کهنه‌نما"
+                        class="real-rug-photo"
+                    >
+
+                    <div class="real-rug-curtain"></div>
+
+                    <span class="real-rug-index">
+                        01
+                    </span>
+
+                </div>
+
+
+                <div class="real-rug-copy">
+
+                    <p>
+                        VINTAGE / NEUTRAL
+                    </p>
+
+                    <h3>
+                        طوسی کهنه‌نما
+                    </h3>
+
+                    <span>
+                        خنثی، آرام و مناسب فضاهای مدرن
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========================================
+                 RUG 02
+            ========================================= -->
+
+            <article
+                class="real-rug-card"
+                data-curtain-direction="left"
+            >
+
+                <div class="real-rug-media">
+
+                    <img
+                        src="{{ url_for('static', filename='images/rug-02.jpg') }}"
+                        alt="سرمه‌ای ترنج‌دار"
+                        class="real-rug-photo"
+                    >
+
+                    <div class="real-rug-curtain"></div>
+
+                    <span class="real-rug-index">
+                        02
+                    </span>
+
+                </div>
+
+
+                <div class="real-rug-copy">
+
+                    <p>
+                        CLASSIC / NAVY
+                    </p>
+
+                    <h3>
+                        سرمه‌ای ترنج‌دار
+                    </h3>
+
+                    <span>
+                        اصیل، رسمی و پرجزئیات
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========================================
+                 RUG 03
+            ========================================= -->
+
+            <article
+                class="real-rug-card"
+                data-curtain-direction="right"
+            >
+
+                <div class="real-rug-media">
+
+                    <img
+                        src="{{ url_for('static', filename='images/rug-03.jpg') }}"
+                        alt="فیروزه‌ای ترنج‌دار"
+                        class="real-rug-photo"
+                    >
+
+                    <div class="real-rug-curtain"></div>
+
+                    <span class="real-rug-index">
+                        03
+                    </span>
+
+                </div>
+
+
+                <div class="real-rug-copy">
+
+                    <p>
+                        TURQUOISE / STATEMENT
+                    </p>
+
+                    <h3>
+                        فیروزه‌ای ترنج‌دار
+                    </h3>
+
+                    <span>
+                        جسور، زنده و شخصیت‌دار
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========================================
+                 RUG 04
+            ========================================= -->
+
+            <article
+                class="real-rug-card"
+                data-curtain-direction="left"
+            >
+
+                <div class="real-rug-media">
+
+                    <img
+                        src="{{ url_for('static', filename='images/rug-04.jpg') }}"
+                        alt="آبی زیتونی ترنج‌دار"
+                        class="real-rug-photo"
+                    >
+
+                    <div class="real-rug-curtain"></div>
+
+                    <span class="real-rug-index">
+                        04
+                    </span>
+
+                </div>
+
+
+                <div class="real-rug-copy">
+
+                    <p>
+                        DEEP BLUE / HERITAGE
+                    </p>
+
+                    <h3>
+                        آبی زیتونی ترنج‌دار
+                    </h3>
+
+                    <span>
+                        سنگین، کلاسیک و باوقار
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========================================
+                 RUG 05
+            ========================================= -->
+
+            <article
+                class="real-rug-card"
+                data-curtain-direction="right"
+            >
+
+                <div class="real-rug-media">
+
+                    <img
+                        src="{{ url_for('static', filename='images/rug-05.jpg') }}"
+                        alt="آبی گلدار کلاسیک"
+                        class="real-rug-photo"
+                    >
+
+                    <div class="real-rug-curtain"></div>
+
+                    <span class="real-rug-index">
+                        05
+                    </span>
+
+                </div>
+
+
+                <div class="real-rug-copy">
+
+                    <p>
+                        FLORAL / BLUE
+                    </p>
+
+                    <h3>
+                        آبی گلدار کلاسیک
+                    </h3>
+
+                    <span>
+                        دلنشین، هنری و آرام
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========================================
+                 RUG 06
+            ========================================= -->
+
+            <article
+                class="real-rug-card"
+                data-curtain-direction="left"
+            >
+
+                <div class="real-rug-media">
+
+                    <img
+                        src="{{ url_for('static', filename='images/rug-06.jpg') }}"
+                        alt="شکارگاه کرم"
+                        class="real-rug-photo"
+                    >
+
+                    <div class="real-rug-curtain"></div>
+
+                    <span class="real-rug-index">
+                        06
+                    </span>
+
+                </div>
+
+
+                <div class="real-rug-copy">
+
+                    <p>
+                        STORY / HERITAGE
+                    </p>
+
+                    <h3>
+                        شکارگاه کرم
+                    </h3>
+
+                    <span>
+                        روایی، خاص و کاملاً ایرانی
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========================================
+                 RUG 07
+            ========================================= -->
+
+            <article
+                class="real-rug-card"
+                data-curtain-direction="right"
+            >
+
+                <div class="real-rug-media">
+
+                    <img
+                        src="{{ url_for('static', filename='images/rug-07.jpg') }}"
+                        alt="قرمز ترنج‌دار"
+                        class="real-rug-photo"
+                    >
+
+                    <div class="real-rug-curtain"></div>
+
+                    <span class="real-rug-index">
+                        07
+                    </span>
+
+                </div>
+
+
+                <div class="real-rug-copy">
+
+                    <p>
+                        RED / ROYAL
+                    </p>
+
+                    <h3>
+                        قرمز ترنج‌دار
+                    </h3>
+
+                    <span>
+                        گرم، سلطنتی و نقطه کانونی فضا
+                    </span>
+
+                </div>
+
+            </article>
+                        <!-- ========================================
+                 RUG 08
+            ========================================= -->
+
+            <article
+                class="real-rug-card"
+                data-curtain-direction="left"
+            >
+
+                <div class="real-rug-media">
+
+                    <img
+                        src="{{ url_for('static', filename='images/rug-08.jpg') }}"
+                        alt="قهوه‌ای گلدار"
+                        class="real-rug-photo"
+                    >
+
+                    <div class="real-rug-curtain"></div>
+
+                    <span class="real-rug-index">
+                        08
+                    </span>
+
+                </div>
+
+
+                <div class="real-rug-copy">
+
+                    <p>
+                        EARTH / FLORAL
+                    </p>
+
+                    <h3>
+                        قهوه‌ای گلدار
+                    </h3>
+
+                    <span>
+                        گرم، صمیمی و کلاسیک
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========================================
+                 RUG 09
+            ========================================= -->
+
+            <article
+                class="real-rug-card"
+                data-curtain-direction="right"
+            >
+
+                <div class="real-rug-media">
+
+                    <img
+                        src="{{ url_for('static', filename='images/rug-09.jpg') }}"
+                        alt="طوسی کلاسیک"
+                        class="real-rug-photo"
+                    >
+
+                    <div class="real-rug-curtain"></div>
+
+                    <span class="real-rug-index">
+                        09
+                    </span>
+
+                </div>
+
+
+                <div class="real-rug-copy">
+
+                    <p>
+                        GREY / CLASSIC
+                    </p>
+
+                    <h3>
+                        طوسی کلاسیک
+                    </h3>
+
+                    <span>
+                        متعادل، شیک و هماهنگ با دکورهای امروزی
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========================================
+                 RUG 10
+            ========================================= -->
+
+            <article
+                class="real-rug-card"
+                data-curtain-direction="left"
+            >
+
+                <div class="real-rug-media">
+
+                    <img
+                        src="{{ url_for('static', filename='images/rug-10.jpg') }}"
+                        alt="طوسی طلایی"
+                        class="real-rug-photo"
+                    >
+
+                    <div class="real-rug-curtain"></div>
+
+                    <span class="real-rug-index">
+                        10
+                    </span>
+
+                </div>
+
+
+                <div class="real-rug-copy">
+
+                    <p>
+                        GREY / GOLD
+                    </p>
+
+                    <h3>
+                        طوسی طلایی
+                    </h3>
+
+                    <span>
+                        لوکس، چشمگیر و مناسب فضاهای رسمی
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========================================
+                 RUG 11
+            ========================================= -->
+
+            <article
+                class="real-rug-card"
+                data-curtain-direction="right"
+            >
+
+                <div class="real-rug-media">
+
+                    <img
+                        src="{{ url_for('static', filename='images/rug-11.jpg') }}"
+                        alt="زرشکی هندسی"
+                        class="real-rug-photo"
+                    >
+
+                    <div class="real-rug-curtain"></div>
+
+                    <span class="real-rug-index">
+                        11
+                    </span>
+
+                </div>
+
+
+                <div class="real-rug-copy">
+
+                    <p>
+                        BURGUNDY / GEOMETRIC
+                    </p>
+
+                    <h3>
+                        زرشکی هندسی
+                    </h3>
+
+                    <span>
+                        جسور، هنری و متفاوت
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========================================
+                 RUG 12
+            ========================================= -->
+
+            <article
+                class="real-rug-card"
+                data-curtain-direction="left"
+            >
+
+                <div class="real-rug-media">
+
+                    <img
+                        src="{{ url_for('static', filename='images/rug-12.jpg') }}"
+                        alt="کرم روشن کلاسیک"
+                        class="real-rug-photo"
+                    >
+
+                    <div class="real-rug-curtain"></div>
+
+                    <span class="real-rug-index">
+                        12
+                    </span>
+
+                </div>
+
+
+                <div class="real-rug-copy">
+
+                    <p>
+                        LIGHT / CLASSIC
+                    </p>
+
+                    <h3>
+                        کرم روشن کلاسیک
+                    </h3>
+
+                    <span>
+                        روشن، آرام و مناسب فضاهای دلباز
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========================================
+                 RUG 13
+            ========================================= -->
+
+            <article
+                class="real-rug-card"
+                data-curtain-direction="right"
+            >
+
+                <div class="real-rug-media">
+
+                    <img
+                        src="{{ url_for('static', filename='images/rug-13.jpg') }}"
+                        alt="نقره‌ای بیضی"
+                        class="real-rug-photo"
+                    >
+
+                    <div class="real-rug-curtain"></div>
+
+                    <span class="real-rug-index">
+                        13
+                    </span>
+
+                </div>
+
+
+                <div class="real-rug-copy">
+
+                    <p>
+                        SILVER / MODERN
+                    </p>
+
+                    <h3>
+                        نقره‌ای بیضی
+                    </h3>
+
+                    <span>
+                        ظریف، مدرن و متفاوت
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========================================
+                 RUG 14
+            ========================================= -->
+
+            <article
+                class="real-rug-card"
+                data-curtain-direction="left"
+            >
+
+                <div class="real-rug-media">
+
+                    <img
+                        src="{{ url_for('static', filename='images/rug-14.jpg') }}"
+                        alt="ذغالی کرم کهنه‌نما"
+                        class="real-rug-photo"
+                    >
+
+                    <div class="real-rug-curtain"></div>
+
+                    <span class="real-rug-index">
+                        14
+                    </span>
+
+                </div>
+
+
+                <div class="real-rug-copy">
+
+                    <p>
+                        CHARCOAL / VINTAGE
+                    </p>
+
+                    <h3>
+                        ذغالی کرم کهنه‌نما
+                    </h3>
+
+                    <span>
+                        سنگین، مدرن و متعادل
+                    </span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         RUG PERSONALITY FINDER
+    ========================================= -->
+
+    <section
+        class="rug-finder-section"
+        id="rug-finder"
+    >
+
+        <div class="rug-finder-shell">
+
+
+            <!-- QUIZ INTRO -->
+
+            <div class="quiz-intro">
+
+                <p class="quiz-eyebrow">
+                    PARNIAN DOT / FIND YOUR RUG
+                </p>
+
+
+                <div class="quiz-intro-title">
+
+                    <span class="quiz-intro-small">
+                        تو هم گیج شدی؟
+                    </span>
+
+
+                    <h2>
+
+                        بین این همه
+                        <span>
+                            خوشگل
+                        </span>
+
+                        کدومو انتخاب کنی؟
+
+                    </h2>
+
+                </div>
+
+
+                <p class="quiz-intro-fun">
+                    حق داری :)
+                </p>
+
+
+                <p class="quiz-intro-description">
+
+                    بیا یه بازی کوچیک کنیم.
+
+                    چندتا سؤال درباره رنگ،
+                    حال‌وهوای خونه و سلیقه‌ات جواب بده؛
+
+                    ما هم آخرش فرش‌هایی رو نشونت می‌دیم
+                    که واقعاً بیشتر به تو می‌خورن.
+
+                </p>
+
+
+                <button
+                    type="button"
+                    class="quiz-start-button"
+                >
+
+                    <span>
+                        بزن بریم، فرش منو پیدا کن
+                    </span>
+
+                    <span class="quiz-start-icon">
+                        ✦
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- QUIZ APP -->
+
+            <div
+                class="quiz-app"
+                aria-live="polite"
+            >
+
+
+                <!-- QUIZ HEADER -->
+
+                <div class="quiz-header">
+
+                    <div class="quiz-progress-copy">
+
+                        <span class="quiz-progress-current">
+                            01
+                        </span>
+
+                        <span class="quiz-progress-divider">
+                            /
+                        </span>
+
+                        <span class="quiz-progress-total">
+                            07
+                        </span>
+
+                    </div>
+
+
+                    <div class="quiz-progress-bar">
+
+                        <div class="quiz-progress-fill"></div>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="quiz-back-button"
+                        aria-label="بازگشت به سوال قبل"
+                    >
+                        قبلی
+                    </button>
+
+                </div>
+
+
+                <!-- ========================================
+                     QUESTION 1
+                     COLOR
+                ========================================= -->
+
+                <div
+                    class="quiz-question active"
+                    data-question="1"
+                    data-key="color"
+                >
+
+                    <div class="quiz-question-copy">
+
+                        <span class="quiz-question-number">
+                            01
+                        </span>
+
+
+                        <p class="quiz-question-kicker">
+                            COLOR MOOD
+                        </p>
+
+
+                        <h3>
+                            کدوم ترکیب رنگ بیشتر خودته؟
+                        </h3>
+
+
+                        <p>
+                            زیاد فکر نکن؛
+                            همونی که اول چشمت گرفت معمولاً جواب درست‌تره.
+                        </p>
+
+                    </div>
+
+
+                    <div class="quiz-options color-options">
+
+
+                        <button
+                            type="button"
+                            class="quiz-option color-option"
+                            data-value="cream"
+                            data-color-cream="10"
+                            data-color-turquoise="2"
+                            data-color-red="1"
+                            data-color-blue="2"
+                            data-color-earth="5"
+                        >
+
+                            <span class="color-palette">
+
+                                <i style="background:#efe3cc;"></i>
+                                <i style="background:#d2bea0;"></i>
+                                <i style="background:#fbf6ec;"></i>
+
+                            </span>
+
+                            <strong>
+                                کرم و بژ
+                            </strong>
+
+                            <small>
+                                روشن، آرام و شیک
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option color-option"
+                            data-value="turquoise"
+                            data-color-cream="5"
+                            data-color-turquoise="10"
+                            data-color-red="2"
+                            data-color-blue="8"
+                            data-color-earth="3"
+                        >
+
+                            <span class="color-palette">
+
+                                <i style="background:#3a7778;"></i>
+                                <i style="background:#7aa8a7;"></i>
+                                <i style="background:#d7ba83;"></i>
+
+                            </span>
+
+                            <strong>
+                                آبی و فیروزه‌ای
+                            </strong>
+
+                            <small>
+                                آرام اما شخصیت‌دار
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option color-option"
+                            data-value="red"
+                            data-color-cream="3"
+                            data-color-turquoise="1"
+                            data-color-red="10"
+                            data-color-blue="2"
+                            data-color-earth="6"
+                        >
+
+                            <span class="color-palette">
+
+                                <i style="background:#702b29;"></i>
+                                <i style="background:#a54f42;"></i>
+                                <i style="background:#c4a16b;"></i>
+
+                            </span>
+
+                            <strong>
+                                زرشکی و قرمز
+                            </strong>
+
+                            <small>
+                                گرم، اصیل و چشمگیر
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option color-option"
+                            data-value="earth"
+                            data-color-cream="6"
+                            data-color-turquoise="2"
+                            data-color-red="2"
+                            data-color-blue="1"
+                            data-color-earth="10"
+                        >
+
+                            <span class="color-palette">
+
+                                <i style="background:#777153;"></i>
+                                <i style="background:#a08c66;"></i>
+                                <i style="background:#dbcfb5;"></i>
+
+                            </span>
+
+                            <strong>
+                                سبز و خاکی
+                            </strong>
+
+                            <small>
+                                طبیعی، گرم و آرام
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option color-option"
+                            data-value="bold"
+                            data-color-cream="4"
+                            data-color-turquoise="8"
+                            data-color-red="8"
+                            data-color-blue="7"
+                            data-color-earth="4"
+                        >
+
+                            <span class="color-palette">
+
+                                <i style="background:#183e65;"></i>
+                                <i style="background:#a83437;"></i>
+                                <i style="background:#c99445;"></i>
+
+                            </span>
+
+                            <strong>
+                                جسور و ترکیبی
+                            </strong>
+
+                            <small>
+                                هرچی خاص‌تر، بهتر
+                            </small>
+
+                        </button>
+
+                    </div>
+
+                </div>
+                                <!-- ========================================
+                     QUESTION 2
+                     STYLE
+                ========================================= -->
+
+                <div
+                    class="quiz-question"
+                    data-question="2"
+                    data-key="style"
+                >
+
+                    <div class="quiz-question-copy">
+
+                        <span class="quiz-question-number">
+                            02
+                        </span>
+
+
+                        <p class="quiz-question-kicker">
+                            YOUR HOME
+                        </p>
+
+
+                        <h3>
+                            خونه‌ای که دوست داری چه حال‌وهوایی داره؟
+                        </h3>
+
+
+                        <p>
+                            نه خونه‌ای که الان داری؛
+                            خونه‌ای که واقعاً دوست داری داشته باشی.
+                        </p>
+
+                    </div>
+
+
+                    <div class="quiz-options style-options">
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="minimal"
+                            data-style-minimal="10"
+                            data-style-modern="7"
+                            data-style-classic="1"
+                            data-style-royal="1"
+                            data-style-artistic="3"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ○
+                            </span>
+
+                            <strong>
+                                مینیمال و خلوت
+                            </strong>
+
+                            <small>
+                                فضای روشن، ساده و بدون شلوغی
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="modern"
+                            data-style-minimal="6"
+                            data-style-modern="10"
+                            data-style-classic="2"
+                            data-style-royal="2"
+                            data-style-artistic="6"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ◇
+                            </span>
+
+                            <strong>
+                                مدرن و خاص
+                            </strong>
+
+                            <small>
+                                تمیز، امروزی و متفاوت
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="classic"
+                            data-style-minimal="2"
+                            data-style-modern="3"
+                            data-style-classic="10"
+                            data-style-royal="7"
+                            data-style-artistic="4"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ✦
+                            </span>
+
+                            <strong>
+                                کلاسیک و اصیل
+                            </strong>
+
+                            <small>
+                                جزئیات ماندگار و حس ایرانی
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="royal"
+                            data-style-minimal="1"
+                            data-style-modern="2"
+                            data-style-classic="8"
+                            data-style-royal="10"
+                            data-style-artistic="5"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ♢
+                            </span>
+
+                            <strong>
+                                باشکوه و سلطنتی
+                            </strong>
+
+                            <small>
+                                رسمی، چشمگیر و پرجزئیات
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="artistic"
+                            data-style-minimal="3"
+                            data-style-modern="7"
+                            data-style-classic="5"
+                            data-style-royal="3"
+                            data-style-artistic="10"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ✺
+                            </span>
+
+                            <strong>
+                                هنری و متفاوت
+                            </strong>
+
+                            <small>
+                                چیزی که همه جا نباشه
+                            </small>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================
+                     QUESTION 3
+                     STATEMENT
+                ========================================= -->
+
+                <div
+                    class="quiz-question"
+                    data-question="3"
+                    data-key="statement"
+                >
+
+                    <div class="quiz-question-copy">
+
+                        <span class="quiz-question-number">
+                            03
+                        </span>
+
+
+                        <p class="quiz-question-kicker">
+                            HOW LOUD?
+                        </p>
+
+
+                        <h3>
+                            فرشت چقدر باید خودش رو نشون بده؟
+                        </h3>
+
+
+                        <p>
+                            دوست داری مکمل دکور باشه
+                            یا وقتی کسی وارد شد اول فرشت رو ببینه؟
+                        </p>
+
+                    </div>
+
+
+                    <div class="quiz-options statement-options">
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="soft"
+                            data-statement="2"
+                        >
+
+                            <span class="statement-scale">
+                                ● ○ ○
+                            </span>
+
+                            <strong>
+                                خیلی آروم
+                            </strong>
+
+                            <small>
+                                مکمل فضا باشه، نه مرکز توجه
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="balanced"
+                            data-statement="5"
+                        >
+
+                            <span class="statement-scale">
+                                ● ● ○
+                            </span>
+
+                            <strong>
+                                متعادل
+                            </strong>
+
+                            <small>
+                                دیده بشه ولی داد نزنه
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="statement"
+                            data-statement="10"
+                        >
+
+                            <span class="statement-scale">
+                                ● ● ●
+                            </span>
+
+                            <strong>
+                                نقطه کانونی خونه
+                            </strong>
+
+                            <small>
+                                می‌خوام همه اول اون رو ببینن
+                            </small>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================
+                     QUESTION 4
+                     PATTERN
+                ========================================= -->
+
+                <div
+                    class="quiz-question"
+                    data-question="4"
+                    data-key="pattern"
+                >
+
+                    <div class="quiz-question-copy">
+
+                        <span class="quiz-question-number">
+                            04
+                        </span>
+
+
+                        <p class="quiz-question-kicker">
+                            PATTERN
+                        </p>
+
+
+                        <h3>
+                            طرح فرش رو چقدر شلوغ دوست داری؟
+                        </h3>
+
+
+                        <p>
+                            این یکی خیلی روی نتیجه نهایی اثر می‌ذاره.
+                        </p>
+
+                    </div>
+
+
+                    <div class="quiz-options pattern-options">
+
+
+                        <button
+                            type="button"
+                            class="quiz-option pattern-option"
+                            data-value="simple"
+                            data-pattern-density="2"
+                        >
+
+                            <span class="pattern-preview pattern-simple">
+
+                                <i></i>
+                                <i></i>
+                                <i></i>
+
+                            </span>
+
+                            <strong>
+                                خلوت
+                            </strong>
+
+                            <small>
+                                طرح کم و فضای تنفس زیاد
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option pattern-option"
+                            data-value="balanced"
+                            data-pattern-density="5"
+                        >
+
+                            <span class="pattern-preview pattern-balanced">
+
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+
+                            </span>
+
+                            <strong>
+                                متعادل
+                            </strong>
+
+                            <small>
+                                نه ساده، نه خیلی پرکار
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option pattern-option"
+                            data-value="detailed"
+                            data-pattern-density="9"
+                        >
+
+                            <span class="pattern-preview pattern-detailed">
+
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+
+                            </span>
+
+                            <strong>
+                                پرجزئیات
+                            </strong>
+
+                            <small>
+                                عاشق نقش و ریزه‌کاری‌ام
+                            </small>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================
+                     QUESTION 5
+                     ROOM
+                ========================================= -->
+
+                <div
+                    class="quiz-question"
+                    data-question="5"
+                    data-key="room"
+                >
+
+                    <div class="quiz-question-copy">
+
+                        <span class="quiz-question-number">
+                            05
+                        </span>
+
+
+                        <p class="quiz-question-kicker">
+                            WHERE?
+                        </p>
+
+
+                        <h3>
+                            این فرش قراره کجای خونه باشه؟
+                        </h3>
+
+
+                        <p>
+                            چون یک فرش خوب فقط باید خوشگل نباشه؛
+                            باید برای فضای درست هم انتخاب بشه.
+                        </p>
+
+                    </div>
+
+
+                    <div class="quiz-options room-options">
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="living"
+                            data-room-living="10"
+                            data-room-lounge="6"
+                            data-room-bedroom="2"
+                            data-room-entry="3"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ▣
+                            </span>
+
+                            <strong>
+                                پذیرایی
+                            </strong>
+
+                            <small>
+                                فضای اصلی و رسمی خانه
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="lounge"
+                            data-room-living="5"
+                            data-room-lounge="10"
+                            data-room-bedroom="5"
+                            data-room-entry="3"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ◫
+                            </span>
+
+                            <strong>
+                                نشیمن
+                            </strong>
+
+                            <small>
+                                فضای روزمره و صمیمی
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="bedroom"
+                            data-room-living="2"
+                            data-room-lounge="5"
+                            data-room-bedroom="10"
+                            data-room-entry="2"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                □
+                            </span>
+
+                            <strong>
+                                اتاق خواب
+                            </strong>
+
+                            <small>
+                                آرامش مهم‌تر از نمایش
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="entry"
+                            data-room-living="3"
+                            data-room-lounge="3"
+                            data-room-bedroom="1"
+                            data-room-entry="10"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ↗
+                            </span>
+
+                            <strong>
+                                ورودی
+                            </strong>
+
+                            <small>
+                                اولین چیزی که دیده میشه
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="unknown"
+                            data-room-living="6"
+                            data-room-lounge="6"
+                            data-room-bedroom="6"
+                            data-room-entry="6"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ?
+                            </span>
+
+                            <strong>
+                                هنوز نمی‌دونم
+                            </strong>
+
+                            <small>
+                                خودتون راهنماییم کنین
+                            </small>
+
+                        </button>
+
+                    </div>
+
+                </div>
+                                <!-- ========================================
+                     QUESTION 6
+                     MOOD
+                ========================================= -->
+
+                <div
+                    class="quiz-question"
+                    data-question="6"
+                    data-key="mood"
+                >
+
+                    <div class="quiz-question-copy">
+
+                        <span class="quiz-question-number">
+                            06
+                        </span>
+
+
+                        <p class="quiz-question-kicker">
+                            FEELING
+                        </p>
+
+
+                        <h3>
+                            دوست داری وقتی وارد خونه می‌شی چه حسی بگیری؟
+                        </h3>
+
+
+                        <p>
+                            ظاهر مهمه؛
+                            ولی حسی که فضا بهت می‌ده مهم‌تره.
+                        </p>
+
+                    </div>
+
+
+                    <div class="quiz-options mood-options">
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="calm"
+                            data-mood-calm="10"
+                            data-mood-warm="5"
+                            data-mood-luxury="3"
+                            data-mood-energy="1"
+                            data-mood-unique="4"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ◌
+                            </span>
+
+                            <strong>
+                                آرامش
+                            </strong>
+
+                            <small>
+                                سبک، روشن و نفس‌دار
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="warm"
+                            data-mood-calm="6"
+                            data-mood-warm="10"
+                            data-mood-luxury="4"
+                            data-mood-energy="5"
+                            data-mood-unique="3"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ◉
+                            </span>
+
+                            <strong>
+                                گرما و صمیمیت
+                            </strong>
+
+                            <small>
+                                خونه‌ای که دلت نخواد ازش بیرون بری
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="luxury"
+                            data-mood-calm="3"
+                            data-mood-warm="5"
+                            data-mood-luxury="10"
+                            data-mood-energy="5"
+                            data-mood-unique="7"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ✦
+                            </span>
+
+                            <strong>
+                                شکوه و لوکس بودن
+                            </strong>
+
+                            <small>
+                                مرتب، باوقار و چشمگیر
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="energy"
+                            data-mood-calm="1"
+                            data-mood-warm="6"
+                            data-mood-luxury="4"
+                            data-mood-energy="10"
+                            data-mood-unique="7"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ✹
+                            </span>
+
+                            <strong>
+                                انرژی
+                            </strong>
+
+                            <small>
+                                رنگ و زندگی بیشتر
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="unique"
+                            data-mood-calm="3"
+                            data-mood-warm="4"
+                            data-mood-luxury="6"
+                            data-mood-energy="7"
+                            data-mood-unique="10"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ◆
+                            </span>
+
+                            <strong>
+                                خاص و متفاوت
+                            </strong>
+
+                            <small>
+                                نمی‌خوام شبیه همه باشه
+                            </small>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================
+                     QUESTION 7
+                     DISLIKE
+                ========================================= -->
+
+                <div
+                    class="quiz-question"
+                    data-question="7"
+                    data-key="dislike"
+                >
+
+                    <div class="quiz-question-copy">
+
+                        <span class="quiz-question-number">
+                            07
+                        </span>
+
+
+                        <p class="quiz-question-kicker">
+                            ONE LAST THING
+                        </p>
+
+
+                        <h3>
+                            کدوم یکی رو اصلاً دوست نداری؟
+                        </h3>
+
+
+                        <p>
+                            این سؤال کمک می‌کنه چیزی که ازش بدت میاد
+                            وارد پیشنهاد نهایی نشه.
+                        </p>
+
+                    </div>
+
+
+                    <div class="quiz-options dislike-options">
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="busy"
+                            data-dislike="busy"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ×
+                            </span>
+
+                            <strong>
+                                طرح خیلی شلوغ
+                            </strong>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="red"
+                            data-dislike="red"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ×
+                            </span>
+
+                            <strong>
+                                رنگ قرمز
+                            </strong>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="light"
+                            data-dislike="light"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ×
+                            </span>
+
+                            <strong>
+                                فرش خیلی روشن
+                            </strong>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="classic"
+                            data-dislike="classic"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ×
+                            </span>
+
+                            <strong>
+                                طرح کلاسیک
+                            </strong>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="quiz-option"
+                            data-value="none"
+                            data-dislike="none"
+                        >
+
+                            <span class="quiz-option-symbol">
+                                ✓
+                            </span>
+
+                            <strong>
+                                هیچ‌کدوم
+                            </strong>
+
+                            <small>
+                                من برای همه‌شون جا دارم :)
+                            </small>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================
+                     ANALYSIS
+                ========================================= -->
+
+                <div class="quiz-analysis">
+
+                    <div class="quiz-analysis-orbit">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                    <p class="quiz-analysis-kicker">
+                        PARNIAN DOT IS THINKING
+                    </p>
+
+
+                    <h3>
+                        داریم سلیقه‌ات رو کنار فرش‌هامون می‌ذاریم...
+                    </h3>
+
+
+                    <p>
+                        رنگ، سبک، طرح، فضا و چیزهایی که دوست نداری
+                        همگی دارن باهم حساب می‌شن.
+                    </p>
+
+                </div>
+
+
+                <!-- ========================================
+                     RESULT
+                ========================================= -->
+
+                <div class="quiz-result">
+
+                    <div class="quiz-result-heading">
+
+                        <p class="quiz-result-kicker">
+                            YOUR PARNIAN DOT MATCH
+                        </p>
+
+
+                        <h3>
+
+                            خب...
+
+                            <span>
+                                پیدات کردیم!
+                            </span>
+
+                            ✦
+
+                        </h3>
+
+
+                        <p class="quiz-result-summary">
+
+                            نتیجه شخصیت و سلیقه تو
+                            اینجا به‌صورت داینامیک نمایش داده میشه.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="quiz-result-personality">
+
+                        <span>
+                            تیپ انتخاب تو
+                        </span>
+
+                        <strong class="quiz-personality-name">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="quiz-result-grid">
+
+
+                        <!-- RESULT 01 -->
+
+                        <article
+                            class="quiz-result-card"
+                            data-result-rank="1"
+                        >
+
+                            <div class="quiz-result-image">
+
+                                <img
+                                    src="{{ url_for('static', filename='images/rug-01.jpg') }}"
+                                    alt="پیشنهاد اول فرش"
+                                    class="quiz-result-photo"
+                                >
+
+                                <span class="quiz-match-badge">
+
+                                    <strong class="quiz-match-percent">
+                                        0%
+                                    </strong>
+
+                                    MATCH
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="quiz-result-content">
+
+                                <span class="quiz-result-rank">
+                                    انتخاب اول
+                                </span>
+
+                                <h4 class="quiz-result-name">
+                                    —
+                                </h4>
+
+                                <p class="quiz-result-reason">
+                                    —
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- RESULT 02 -->
+
+                        <article
+                            class="quiz-result-card"
+                            data-result-rank="2"
+                        >
+
+                            <div class="quiz-result-image">
+
+                                <img
+                                    src="{{ url_for('static', filename='images/rug-02.jpg') }}"
+                                    alt="پیشنهاد دوم فرش"
+                                    class="quiz-result-photo"
+                                >
+
+                                <span class="quiz-match-badge">
+
+                                    <strong class="quiz-match-percent">
+                                        0%
+                                    </strong>
+
+                                    MATCH
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="quiz-result-content">
+
+                                <span class="quiz-result-rank">
+                                    انتخاب دوم
+                                </span>
+
+                                <h4 class="quiz-result-name">
+                                    —
+                                </h4>
+
+                                <p class="quiz-result-reason">
+                                    —
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- RESULT 03 -->
+
+                        <article
+                            class="quiz-result-card"
+                            data-result-rank="3"
+                        >
+
+                            <div class="quiz-result-image">
+
+                                <img
+                                    src="{{ url_for('static', filename='images/rug-03.jpg') }}"
+                                    alt="پیشنهاد سوم فرش"
+                                    class="quiz-result-photo"
+                                >
+
+                                <span class="quiz-match-badge">
+
+                                    <strong class="quiz-match-percent">
+                                        0%
+                                    </strong>
+
+                                    MATCH
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="quiz-result-content">
+
+                                <span class="quiz-result-rank">
+                                    انتخاب سوم
+                                </span>
+
+                                <h4 class="quiz-result-name">
+                                    —
+                                </h4>
+
+                                <p class="quiz-result-reason">
+                                    —
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="quiz-close-match">
+
+                        <span>
+                            ✦
+                        </span>
+
+                        <p>
+                            اگر دو انتخاب خیلی به هم نزدیک باشند،
+                            اینجا بهت می‌گیم که سلیقه‌ات بین دو سبک قرار گرفته.
+                        </p>
+
+                    </div>
+
+
+                    <div class="quiz-result-actions">
+
+                        <a
+                            href="#real-rugs"
+                            class="quiz-view-products"
+                        >
+                            مشاهده پیشنهادهای من
+                        </a>
+
+
+                        <button
+                            type="button"
+                            class="quiz-restart-button"
+                        >
+                            دوباره تست می‌کنم ↻
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ========================================
+         MARQUEE
+    ========================================= -->
+
+    <section class="marquee-section">
+
+        <div class="marquee-track">
+
+            <div class="marquee-content">
+
+                <span>
+                    زیبایی
+                </span>
+
+                <i>
+                    ✦
+                </i>
+
+                <span>
+                    کاربرد
+                </span>
+
+                <i>
+                    ✦
+                </i>
+
+                <span>
+                    ثبات
+                </span>
+
+                <i>
+                    ✦
+                </i>
+
+                <span>
+                    جزئیات
+                </span>
+
+                <i>
+                    ✦
+                </i>
+
+                <span>
+                    PARNIAN DOT
+                </span>
+
+                <i>
+                    ✦
+                </i>
+
+
+                <span>
+                    زیبایی
+                </span>
+
+                <i>
+                    ✦
+                </i>
+
+                <span>
+                    کاربرد
+                </span>
+
+                <i>
+                    ✦
+                </i>
+
+                <span>
+                    ثبات
+                </span>
+
+                <i>
+                    ✦
+                </i>
+
+                <span>
+                    جزئیات
+                </span>
+
+                <i>
+                    ✦
+                </i>
+
+                <span>
+                    PARNIAN DOT
+                </span>
+
+                <i>
+                    ✦
+                </i>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         WHY PARNIAN DOT
+    ========================================= -->
+
+    <section class="why-section">
+
+        <div class="why-header">
+
+            <p class="why-label">
+                WHY PARNIAN DOT
+            </p>
+
+
+            <h2>
+
+                ساده،
+
+                <span>
+                    کاربردی،
+                </span>
+
+                ماندگار
+
+            </h2>
+
+        </div>
+
+
+        <div class="why-grid">
+
+
+            <article class="why-card">
+
+                <div class="why-card-top">
+
+                    <span>
+                        01
+                    </span>
+
+                    <span class="why-icon">
+                        ◯
+                    </span>
+
+                </div>
+
+
+                <div class="why-card-content">
+
+                    <h3>
+                        دقت
+                    </h3>
+
+                    <p>
+
+                        اجرای منظم و کنترل‌شده چاپ نقطه‌ای
+                        برای دستیابی به عملکردی یکنواخت و قابل اعتماد.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="why-card">
+
+                <div class="why-card-top">
+
+                    <span>
+                        02
+                    </span>
+
+                    <span class="why-icon">
+                        ◇
+                    </span>
+
+                </div>
+
+
+                <div class="why-card-content">
+
+                    <h3>
+                        کاربرد
+                    </h3>
+
+                    <p>
+
+                        راهکاری عملی برای افزایش اصطکاک،
+                        کاهش لغزش و بهبود عملکرد انواع پارچه و نمد.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="why-card">
+
+                <div class="why-card-top">
+
+                    <span>
+                        03
+                    </span>
+
+                    <span class="why-icon">
+                        ✦
+                    </span>
+
+                </div>
+
+
+                <div class="why-card-content">
+
+                    <h3>
+                        کیفیت
+                    </h3>
+
+                    <p>
+
+                        توجه به جزئیات، انتخاب صحیح مواد
+                        و اجرای دقیق برای نتیجه‌ای ماندگارتر.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         ABOUT
+    ========================================= -->
+
+    <section
+        class="about-section"
+        id="about"
+    >
+
+        <div class="about-small">
+            ABOUT PARNIAN DOT
+        </div>
+
+
+        <div class="about-content">
+
+            <h2>
+
+                دقت در
+
+                <span>
+                    هر نقطه
+                </span>
+
+            </h2>
+
+
+            <p>
+
+                پرنیان دات با تمرکز بر خدمات چاپ نقطه‌ای PVC
+                بر پشت نمدهای ژئوتکستایل و انواع پارچه،
+                راهکارهایی کاربردی برای افزایش اصطکاک
+                و کاهش لغزش روی سطوح مختلف ارائه می‌دهد.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         CONTACT
+    ========================================= -->
+
+    <section
+        class="contact-section"
+        id="contact"
+    >
+
+        <div class="contact-top">
+
+            <p class="contact-label">
+                CONTACT
+            </p>
+
+            <span class="contact-number">
+                03
+            </span>
+
+        </div>
+
+
+        <h2>
+
+            با ما
+
+            <span>
+                در ارتباط باشید
+            </span>
+
+        </h2>
+
+
+        <p class="contact-description">
+
+            برای دریافت اطلاعات بیشتر درباره خدمات،
+            محصولات و همکاری با پرنیان دات،
+            از راه‌های زیر با ما در ارتباط باشید.
+
+        </p>
+
+
+        <div class="contact-links">
+
+
+            <a
+                href="https://instagram.com/parniyandot"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <span>
+                    اینستاگرام
+                </span>
+
+                <small>
+                    @parniyandot ↗
+                </small>
+
+            </a>
+
+
+            <a
+                href="https://wa.me/989125935988"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <span>
+                    واتساپ
+                </span>
+
+                <small>
+                    0912 593 5988 ↗
+                </small>
+
+            </a>
+
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=استان+البرز+اشتهارد+شهرک+صنعتی+اشتهارد+خیابان+حسابی+شرقی"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <span>
+                    آدرس
+                </span>
+
+                <small>
+                    مشاهده روی نقشه ↗
+                </small>
+
+            </a>
+
+        </div>
+
+
+        <div class="contact-address">
+
+            <span>
+                آدرس مجموعه
+            </span>
+
+
+            <p>
+
+                استان البرز، اشتهارد،
+                شهرک صنعتی اشتهارد،
+                خیابان حسابی شرقی
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer class="footer">
+
+        <div class="footer-brand">
+
+            <strong>
+                پرنیان دات
+            </strong>
+
+            <span>
+                PARNIAN DOT
+            </span>
+
+        </div>
+
+
+        <div class="footer-center">
+
+            <span>
+                چاپ نقطه‌ای PVC
+            </span>
+
+            <span>
+                /
+            </span>
+
+            <span>
+                فرشینه و ترمزگیر
+            </span>
+
+        </div>
+
+
+        <div class="footer-end">
+
+            <span>
+                © 2026
+            </span>
+
+            <a href="#hero">
+                بازگشت به بالا ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================
+         SCRIPTS
+    ========================================= -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+    </script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
+    </script>
+
+    <script
+        src="{{ url_for('static', filename='js/main.js') }}">
+    </script>
+
+    <script
+        src="{{ url_for('static', filename='js/collection.js') }}">
+    </script>
+
+</body>
+
+</html>

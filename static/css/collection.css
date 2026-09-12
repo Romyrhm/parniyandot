@@ -1,0 +1,707 @@
+/* =========================================================
+   PARNIAN DOT
+   COLLECTION + GRIP
+   ORIGINAL HERO CARPET MOTION PRESERVED
+========================================================= */
+
+
+/* =========================================================
+   REMOVE IMAGE LOGO ONLY
+========================================================= */
+
+.preloader-logo-card,
+.hero-brand-logo {
+    display: none !important;
+}
+
+
+/* =========================================================
+   IMPORTANT
+   HERO CARPET MUST STAY VISIBLE
+========================================================= */
+
+.carpet-stage {
+    display: block !important;
+}
+
+
+/* =========================================================
+   REAL RUG COLLECTION
+========================================================= */
+
+.real-rugs-section {
+    position: relative;
+
+    min-height: 100vh;
+
+    padding:
+        150px
+        clamp(30px, 7vw, 110px);
+
+    background:
+        radial-gradient(
+            circle at 12% 12%,
+            rgba(185, 154, 103, 0.12),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 86% 74%,
+            rgba(58, 119, 120, 0.12),
+            transparent 30%
+        ),
+        #eaf0ee;
+
+    overflow: hidden;
+}
+
+
+.real-rugs-section::before {
+    content: "PARNIAN DOT";
+
+    position: absolute;
+
+    left: -3vw;
+    top: 70px;
+
+    direction: ltr;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size:
+        clamp(
+            90px,
+            18vw,
+            270px
+        );
+
+    font-weight: 700;
+
+    letter-spacing: -10px;
+
+    color:
+        rgba(58, 119, 120, 0.04);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   COLLECTION HEADER
+========================================================= */
+
+.real-rugs-head {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1400px;
+
+    margin:
+        0 auto 90px;
+}
+
+
+.real-rugs-kicker {
+    direction: ltr;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 7px;
+
+    color:
+        rgba(18, 61, 62, 0.46);
+
+    margin-bottom: 28px;
+}
+
+
+.real-rugs-title-row {
+    display: grid;
+
+    grid-template-columns:
+        1.2fr
+        0.8fr;
+
+    gap: 70px;
+
+    align-items: end;
+}
+
+
+.real-rugs-title-row h2 {
+    font-size:
+        clamp(
+            68px,
+            9vw,
+            145px
+        );
+
+    line-height: 0.96;
+
+    font-weight: 400;
+
+    letter-spacing: -5px;
+}
+
+
+.real-rugs-title-row h2 span {
+    display: block;
+
+    color: #b99a67;
+
+    font-weight: 500;
+}
+
+
+.real-rugs-title-row p {
+    max-width: 470px;
+
+    padding-bottom: 15px;
+
+    font-size: 14px;
+
+    line-height: 2.2;
+
+    color:
+        rgba(18, 61, 62, 0.62);
+}
+
+
+/* =========================================================
+   RUG GRID
+========================================================= */
+
+.real-rugs-list {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        88px
+        28px;
+}
+
+
+.real-rug-card {
+    position: relative;
+
+    min-width: 0;
+}
+
+
+.real-rug-card:nth-child(even) {
+    margin-top: 90px;
+}
+
+
+/* =========================================================
+   RUG IMAGE
+========================================================= */
+
+.real-rug-media {
+    position: relative;
+
+    height:
+        clamp(
+            440px,
+            54vw,
+            760px
+        );
+
+    overflow: hidden;
+
+    background: #123d3e;
+
+    isolation: isolate;
+
+    box-shadow:
+        0 28px 75px
+        rgba(18, 61, 62, 0.12);
+}
+
+
+.real-rug-photo {
+    position: absolute;
+
+    inset: -7% 0;
+
+    width: 100%;
+    height: 114%;
+
+    object-fit: cover;
+
+    transform:
+        scale(1.12);
+
+    will-change: transform;
+}
+
+
+.real-rug-media::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(9, 39, 40, 0.03),
+            transparent 45%,
+            rgba(9, 39, 40, 0.18)
+        );
+}
+
+
+/* =========================================================
+   CURTAIN REVEAL
+========================================================= */
+
+.real-rug-curtain {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 5;
+
+    background:
+        linear-gradient(
+            135deg,
+            #123d3e,
+            #2a5d5e 55%,
+            #b99a67
+        );
+
+    will-change: transform;
+}
+
+
+.real-rug-curtain::before,
+.real-rug-curtain::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    width: 1px;
+
+    background:
+        rgba(255, 255, 255, 0.14);
+}
+
+
+.real-rug-curtain::before {
+    right: 20px;
+}
+
+
+.real-rug-curtain::after {
+    left: 20px;
+}
+
+
+/* =========================================================
+   RUG NUMBER
+========================================================= */
+
+.real-rug-index {
+    position: absolute;
+
+    z-index: 6;
+
+    top: 24px;
+    right: 24px;
+
+    min-width: 58px;
+    height: 58px;
+
+    display: grid;
+
+    place-items: center;
+
+    direction: ltr;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.24);
+
+    background:
+        rgba(12, 48, 49, 0.42);
+
+    backdrop-filter:
+        blur(10px);
+
+    -webkit-backdrop-filter:
+        blur(10px);
+
+    color: white;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   RUG COPY
+========================================================= */
+
+.real-rug-copy {
+    margin-top: 18px;
+
+    padding-top: 24px;
+
+    border-top:
+        1px solid
+        rgba(18, 61, 62, 0.14);
+}
+
+
+.real-rug-copy p {
+    direction: ltr;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 5px;
+
+    color:
+        rgba(18, 61, 62, 0.46);
+
+    margin-bottom: 12px;
+}
+
+
+.real-rug-copy h3 {
+    font-size:
+        clamp(
+            32px,
+            4vw,
+            58px
+        );
+
+    line-height: 1.08;
+
+    font-weight: 500;
+
+    letter-spacing: -2px;
+}
+
+
+.real-rug-copy span {
+    display: block;
+
+    margin-top: 12px;
+
+    font-size: 13px;
+
+    line-height: 2;
+
+    color:
+        rgba(18, 61, 62, 0.58);
+}
+
+
+/* =========================================================
+   CARPET GRIP REAL PHOTOS
+========================================================= */
+
+.grip-visual.grip-dot-showcase {
+    display: grid;
+
+    grid-template-columns:
+        1.08fr
+        0.92fr;
+
+    gap: 12px;
+
+    padding: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #123d3e,
+            #1b4b4c
+        );
+}
+
+
+.grip-dot-panel {
+    position: relative;
+
+    min-width: 0;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(215, 186, 131, 0.18);
+
+    background:
+        #123d3e;
+}
+
+
+.grip-dot-panel::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 3;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(10, 35, 36, 0.02),
+            rgba(10, 35, 36, 0.10) 60%,
+            rgba(10, 35, 36, 0.30)
+        );
+}
+
+
+.grip-dot-photo {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.grip-dot-photo-one {
+    object-position:
+        center 55%;
+}
+
+
+.grip-dot-photo-two {
+    object-position:
+        center center;
+}
+
+
+.grip-dot-label {
+    position: absolute;
+
+    z-index: 5;
+
+    left: 18px;
+    bottom: 18px;
+
+    direction: ltr;
+
+    padding:
+        10px
+        12px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.18);
+
+    background:
+        rgba(10, 42, 43, 0.48);
+
+    backdrop-filter:
+        blur(10px);
+
+    -webkit-backdrop-filter:
+        blur(10px);
+
+    color: white;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-content p strong {
+    color: #e4c98d;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .real-rugs-section {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+
+
+    .real-rugs-title-row {
+        grid-template-columns:
+            1fr;
+
+        gap: 28px;
+    }
+
+
+    .real-rugs-list {
+        grid-template-columns:
+            1fr;
+
+        gap: 70px;
+    }
+
+
+    .real-rug-card:nth-child(even) {
+        margin-top: 0;
+    }
+
+
+    .real-rug-media {
+        height: 560px;
+    }
+
+
+    .grip-visual.grip-dot-showcase {
+        grid-template-columns:
+            1fr
+            1fr;
+
+        height: 560px;
+    }
+
+}
+
+
+@media (max-width: 560px) {
+
+    .real-rugs-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .real-rugs-title-row h2 {
+        font-size: 58px;
+
+        letter-spacing: -3px;
+    }
+
+
+    .real-rug-media {
+        height: 420px;
+    }
+
+
+    .real-rug-index {
+        width: 50px;
+        height: 50px;
+
+        min-width: 50px;
+
+        top: 16px;
+        right: 16px;
+    }
+
+
+    .real-rug-copy h3 {
+        font-size: 36px;
+    }
+
+
+    .grip-visual.grip-dot-showcase {
+        grid-template-columns:
+            1fr;
+
+        height: auto;
+    }
+
+
+    .grip-dot-panel {
+        height: 420px;
+    }
+
+}
+/* =========================================================
+   SITE DEVELOPER CREDIT
+========================================================= */
+
+.footer::after {
+    content: "Website Developer — Romina Rahimi";
+
+    grid-column: 1 / -1;
+
+    width: 100%;
+
+    margin-top: 16px;
+
+    padding-top: 18px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.06);
+
+    text-align: center;
+
+    direction: ltr;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 400;
+
+    letter-spacing: 2.5px;
+
+    color:
+        rgba(248, 244, 237, 0.34);
+}
